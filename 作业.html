@@ -16,6 +16,7 @@
         margin-top: 30px;
         padding-top: 20px;
     }
+
 /*    #imgsize{
       height:700px;
     }
@@ -28,7 +29,48 @@
 </head>
   <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top navbar-default">
+     <nav class="navbar navbar-inverse navbar-fixed-top navbar-default">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" >
+        <span class="sr-only">现代浏览器博物馆</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">现代浏览器博物馆</a>
+    </div>
+
+ 
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">综述<span class="sr-only">(current)</span></a></li>
+        <li><a href="#">简述</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >特点<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+              <li><a href="#">Chrome</a></li>
+              <li><a href="#">Firefox</a></li>
+              <li><a href="#">Safari</a></li>
+              <li><a href="#">Opera</a></li>
+              <li><a href="#">IE</a></li>
+          </ul>
+        </li>
+        <li data-toggle="modal" data-target="#mtk"><a href="#">关于</a></li>
+      </ul>
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="请输入关键字">
+        </div>
+        <button type="submit" class="btn btn-default">搜索</button>
+      </form>
+
+    </div>
+  </div>
+</nav>
+
+    <!-- <nav class="navbar navbar-inverse navbar-fixed-top navbar-default">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -38,16 +80,6 @@
             </button>
             <a class="navbar-brand" href="#">现代浏览器博物馆</a>
           </div>
- <!--    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" >现代浏览器博物馆</a>
-        </div> -->
-        
   
         <div classs="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav"> 
@@ -60,24 +92,24 @@
                         <li><a href="#">Firefox</a></li>
                         <li><a href="#">Safari</a></li>
                         <li><a href="#">Opera</a></li>
+             
                         <li><a href="#">IE</a></li>
                     </ul>
                 </li>
                 <button class="btn btn-active btn-lg" data-toggle="modal" data-target="#mtk">关于
                 </button>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
-            <form class="navbar-form navbar-left">
+            <form class="navbar-form navbar-right">
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="请输入关键字">
                 </div>
                 <button class="btn btn-sm " id="shousuo"
                 class="btn btn-default">搜索</button>
             </form>
-            </ul>
+ 
         </div>
-          </div>
-    </nav>
+          </div> 
+    </nav> -->
    
 
     <div class="carousel slide" data-ride="carousel" id="lbt">
@@ -154,61 +186,88 @@
             <div class="col-md-4">
                 <img src="images/chrome-logo-small.jpg">
                 <h2>chrome</h2>
-                <p>aaaaaaaa</p>
-                <button class="btn">点我下载</button>
+                <p>aaaaaaaa Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, aperiam, ipsam! Nesciunt veritatis minus magnam. Quos expedita provident mollitia perspiciatis vitae itaque cupiditate laborum accusantium aut praesentium, non ea quidem.100 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat molestias nesciunt corrupti odio sit delectus temporibus numquam eaque quo quia dolore quae cumque autem dignissimos iste nam iusto minima quaerat unde, quibusdam sapiente aspernatur doloremque corporis! Commodi nam obcaecati accusamus, sint, id cumque, quod perferendis assumenda odit laudantium facilis ipsum.</p>
+                <button class="btn btn-default">点我下载</button>
             </div>
             <div class="col-md-4">
                 <img src="images/firefox-logo-small.jpg">
                 <h2>firefox</h2>
                 <p>fgvdsfdsafads</p>
-                <button class="btn">点我下载</button>
+                <button class="btn btn-default">点我下载</button>
             </div>
             <div class="col-md-4">
                 <img src="images/safari-logo-small.jpg">
                 <h2>safari</h2>
-                <p>aaaaaaaa</p>
-                <button class="btn">点我下载</button>
+                <p>aaaaaaaagdfgsdfgd</p>
+                <button class="btn btn-default">点我下载</button>
             </div>
         </div>
     </div>
 
 
 
-    <div>
-        <ul class="nav nav-tabs" role="tablist">
+    <div >
+        
+             <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#chrome" role="tab" data-toggle="pill">chrome</a></li>
             <li role="presentation" ><a href="#firefox" role="tab" data-toggle="pill">firefox</a></li>
             <li role="presentation" ><a href="#ie" role="tab" data-toggle="pill">ie</a></li>
             <li role="presentation" ><a href="#opera" role="tab" data-toggle="pill">opera</a></li>
             <li role="presentation" ><a href="#safari" role="tab" data-toggle="pill">safari</a></li>
         </ul>
-        <div class="tab-content">
-            <div role="tabpanel" class="tab-pane  active" id="chrome">
-                <h2>Google Chrome</h2>
-                <p>fasfjaisudfhadsiufasiu</p>
-                <img src="images/chrome-logo.jpg">
+        <div class="container">
+        <div class="row">
+        <div class="tab-content" >
+            <div role="tabpanel" class="tab-pane  active " id="chrome">
+                <div class="col-md-5"> 
+                <h2><a href="#">Google Chrome</a> 谷歌浏览器</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates dolores modi, perspiciatis error quis, vero expedita veritatis reiciendis, provident consequatur, facere est id! Omnis voluptas molestias reiciendis unde, quam inventore.50 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam molestias, quas neque ab veniam, nesciunt praesentium vel repudiandae obcaecati. Quis sequi aliquam nulla itaque sit? Maiores quas laborum eveniet rerum beatae mollitia libero, fugiat deleniti distinctio velit commodi et eius fugit aliquam assumenda placeat vero corporis dolores voluptates veniam nesciunt.</p>  
+                </div>
+                               
+                <div calss="col-md-5"><img src="images/chrome-logo.jpg"></div> 
             </div>
-            <div role="tabpanel" class="tab-pane " id="firefox">
+           
+            <div role="tabpanel" class="tab-pane  active" id="firefox">
+                <div class="col-md-5">
                 <h2>2</h2>
-                <p>fasfjaisudfhadsiufasiu</p>
-                <img src="images/firefox-logo.jpg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates dolores modi, perspiciatis error quis, vero expedita veritatis reiciendis, provident consequatur, facere est id! Omnis voluptas molestias reiciendis unde, quam inventore.50</p>   
+                </div>
+                <div class="col-md-5"><img src="images/firefox-logo.jpg">
+                </div>
             </div>
+
             <div role="tabpanel" class="tab-pane " id="ie">
+                <div class="col-md-5">
                 <h2>3</h2>
                 <p>fasfjaisudfhadsiufasiu</p>
-                <img src="images/ie-logo.jpg">
+                </div>
+                <div class="col-md-5"><img src="images/ie-logo.jpg"> </div>
+                
             </div>
             <div role="tabpanel" class="tab-pane " id="opera">
+                <div class="col-md-5">
                 <h2>4</h2>
                 <p>fasfjaisudfhadsiufasiu</p>
-                <img src="images/opera-logo.jpg">
-            </div>    
+                </div>
+                <div class="col-md-5"><img src="images/opera-logo.jpg"></div>
+            </div>   
+
             <div role="tabpanel" class="tab-pane " id="safari">
+                <div class="col-md-5">
                 <h2>5</h2>
                 <p>fasfjaisudfhadsiufasiu</p>
-                <img src="images/safari-logo.jpg">
+                </div>
+                <div class="col-md-5"><img src="images/safari-logo.jpg"></div>
             </div>
         </div>
+        </div>
+
+    </div>
+        
+        
+   
+     
+           
     </div>
 
 
@@ -216,14 +275,14 @@
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <button class="close" data-dismiss="modal"><span aria-hidden="true">&times</span></button>
+                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
                                 <h3 class="modal-title">1151452</h3>
                             </div>
                             <div class="modal-body">
-                                156489140489412318478914251
+                                <p>fdsafawefw</p>
                             </div>
-                            <div class="footer">
-                                    <button  class="btn btn-default" data-dismiss="modal">Close</button>
+                            <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
